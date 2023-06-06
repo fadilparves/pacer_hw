@@ -20,7 +20,7 @@ def get_score(request, user_id):
         score = 0
 
     # create a new score object
-    new_score = Score(score=score, user_id=user_id)
+    new_score = Score(score=score, user_id=user_id, username='test')
 
     # save the new score object
     new_score.save()
